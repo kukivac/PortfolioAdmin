@@ -1,0 +1,9 @@
+{extends "../@layout.latte"}
+{block content}
+    {ifset $message}
+        {$message}
+    {/ifset}
+    <div class="sign-page">
+        {$form->render()}
+    </div>
+{/block}

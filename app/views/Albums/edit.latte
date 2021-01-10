@@ -1,0 +1,28 @@
+{extends "../@layout.latte"}
+{block content}
+    {ifset $message}
+        {$message}
+    {/ifset}
+    <div class="container">
+        {$editForm->render()}
+    </div>
+
+    <div class="container">
+        {$uploadForm->render()}
+    </div>
+    {ifset $images}
+        <div class="container d-flex">
+            {foreach $images as $image}
+                <div class="image-container">
+                    <img src="images/fullview/{$image["filename"]}" width="250">
+                    <label>Title:</label>
+                    <input type="text" class="form-control" image-id="{$image["id"]}">
+                    <label>Description:</label>
+                    <input type="text" class="form-control" image-id="{$image["id"]}">
+                    <button class="btn btn-warning" image-id="{$image["id"]}">Edit</button>
+                    <button class="btn btn-danger" image-id="{$image["id"]}">Remove</button>
+                </div>
+            {/foreach}
+        </div>
+    {/ifset}
+{/block}

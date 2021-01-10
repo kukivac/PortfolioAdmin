@@ -1,0 +1,81 @@
+p {
+  margin-bottom: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", serif;
+}
+
+a {
+  font-style: normal;
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  font-style: normal;
+  text-decoration: none;
+  color: black;
+}
+
+a * {
+  font-style: normal;
+  text-decoration: none;
+  color: black;
+}
+
+a * :hover {
+  font-style: normal;
+  text-decoration: none;
+  color: black;
+}
+
+.sign-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+#frm-SignIn {
+  display: flex;
+  flex-flow: column;
+}
+
+#frm-SignIn > * {
+  margin: 5px;
+}
+
+.album-select {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.album-select button {
+  margin: 15px;
+}
+
+.image-container {
+  padding: 5px;
+  border: 1px solid #6e6e6e;
+  border-radius: 3px;
+  margin: 2px;
+  display: flex;
+  flex-flow: column;
+}
+
+.form-control-feedback {
+  color: #ff362e;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */

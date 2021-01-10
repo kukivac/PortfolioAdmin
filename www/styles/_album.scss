@@ -1,0 +1,20 @@
+.album-select {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.album-select button {
+  margin: 15px;
+}
+
+.image-container {
+  padding: 5px;
+  border: 1px solid #6e6e6e;
+  border-radius: 3px;
+  margin: 2px;
+  display: flex;
+  flex-flow: column;
+}

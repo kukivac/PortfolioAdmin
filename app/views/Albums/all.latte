@@ -1,0 +1,27 @@
+{extends "../@layout.latte"}
+{block content}
+    <table class="table">
+        <thead>
+        <tr>
+            <th></th>
+            <th>#</th>
+            <th>Title</th>
+            <th>Number of photos</th>
+            <th>Visible</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        {foreach $albums as $album}
+            <tr>
+                <td><img src="images/thumbnail/{$album["cover_photo"]}" width="150"></td>
+                <th>{$album["id"]}</th>
+                <td>{$album["title"]}</td>
+                <td>{$album["no_photos"]}</td>
+                <td>{$album["visible"]}</td>
+                <td><a href="albums/edit/{$album["dash_title"]}"><button class="btn btn-warning">Edit</button></a></td>
+            </tr>
+        {/foreach}
+        </tbody>
+    </table>
+{/block}

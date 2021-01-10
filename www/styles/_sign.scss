@@ -1,0 +1,14 @@
+.sign-page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+#frm-SignIn{
+  display: flex;
+  flex-flow: column;
+}
+#frm-SignIn>*{
+  margin: 5px;
+}
